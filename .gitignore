@@ -1,0 +1,7 @@
+.idea/
+*.iml
+*.class
+package.bluej
+.gradle
+local.properties
+build/

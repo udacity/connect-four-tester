@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'checkstyle'
+mainClassName = "GraderRunner"
+
+defaultTasks 'run', 'check'
+
+def checkstyleConfigDir = new File(buildscript.sourceFile.parentFile, '/config/checkstyle')
+checkstyle {
+    configProperties.checkstyleConfigDir = checkstyleConfigDir
+}
+
+sourceSets {
+    MyAgent {
+        java {
+            srcDir 'src/main/java'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+}
