@@ -3,8 +3,8 @@ public class GamesStatistics {
     // I trust that you won't make this program explode.
     public int numGames;
 
-    public int numRedWon;
-    public int numYellowWon;
+    public int numRedWins;
+    public int numYellowWins;
     public int numTies;
     public int numInvalidMoves;
 
@@ -25,14 +25,28 @@ public class GamesStatistics {
      * Prints out the statistics of the game.
      */
     public void printStatistics() {
+        Agent myAgent, opponentAgent;
+        int myAgentWins, opponentAgentWins;
+
+        if (redPlayer instanceof MyAgent) {
+            myAgent = redPlayer;
+            myAgentWins = numRedWins;
+            opponentAgent = yellowPlayer;
+            opponentAgentWins = numYellowWins;
+        } else {
+            myAgent = yellowPlayer;
+            myAgentWins = numYellowWins;
+            opponentAgent = redPlayer;
+            opponentAgentWins = numRedWins;
+        }
         System.out.println("----------------");
         System.out.println("Number of games played: " + this.numGames);
-        System.out.printf("# times %s won: %d (%.2f%%)\n", redPlayer.getName(),
-                this.numRedWon,
-                this.percentTotal(this.numRedWon));
+        System.out.printf("# times %s won: %d (%.2f%%)\n", myAgent.getName(),
+                myAgentWins,
+                this.percentTotal(myAgentWins));
         System.out.printf("# times %s won: %d (%.2f%%)\n",
-                yellowPlayer.getName(), this.numYellowWon,
-                this.percentTotal(this.numYellowWon));
+                opponentAgent.getName(), opponentAgentWins,
+                this.percentTotal(opponentAgentWins));
         System.out.printf("# times tied: %d (%.2f%%)\n",
                 this.numTies,
                 this.percentTotal(this.numTies));

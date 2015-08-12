@@ -91,9 +91,9 @@ public class GraderRunner {
             gameFrame.playToEnd();
 
             if (game.gameWon() == 'R') {
-                gameStatistics.numRedWon++;
+                gameStatistics.numRedWins++;
             } else if (game.gameWon() == 'Y') {
-                gameStatistics.numYellowWon++;
+                gameStatistics.numYellowWins++;
             } else if (game.boardFull()) {
                 gameStatistics.numTies++;
             }
