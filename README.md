@@ -27,26 +27,26 @@ The tool plays the Connect Four game between the student’s agent and the other
 Game Statistics for Yellow MyAgent:
 ----------------
 Number of games played: 1000
-# times Random Agent won: 86 (8.60%)
 # times My Agent won: 908 (90.80%)
+# times Random Agent won: 86 (8.60%)
 # times tied: 6 (0.60%)
 # of invalid moves: 0 (0.00%)
 ----------------
 Number of games played: 1000
-# times Beginner Agent won: 386 (38.60%)
 # times My Agent won: 588 (58.80%)
+# times Beginner Agent won: 386 (38.60%)
 # times tied: 26 (2.60%)
 # of invalid moves: 0 (0.00%)
 ----------------
 Number of games played: 1000
-# times Intermediate Agent won: 551 (55.10%)
 # times My Agent won: 420 (42.00%)
+# times Intermediate Agent won: 551 (55.10%)
 # times tied: 29 (2.90%)
 # of invalid moves: 0 (0.00%)
 ----------------
 Number of games played: 1000
-# times Brilliant Agent won: 764 (76.40%)
 # times My Agent won: 193 (19.30%)
+# times Brilliant Agent won: 764 (76.40%)
 # times tied: 43 (4.30%)
 # of invalid moves: 0 (0.00%)
 
